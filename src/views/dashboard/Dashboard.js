@@ -50,7 +50,7 @@ const Dashboard = () => {
       <div className="text-center">
         <div className="row">
 
-          <div className="col-xl-12 px-xl-3">
+          <div className="col-xl-12 px-xl-3 mb-xl-5">
             <div className="col-xl-12 rounded-4 shadow pb-xl-2 pt-xl-2">
 
               <div className="col-xl-12">
@@ -64,36 +64,42 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="col-xl-4 mt-xl-5">
+          <div className="col-xl-4 mt-xl-5 pt-xl-5">
 
-            <div id="chart_1" onClick={handleNavigateToChartOne} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-4 mb-xl-4 rounded-4 shadow">
+            <div id="chart_1" onClick={handleNavigateToChartThree} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-5 mb-xl-4 rounded-4 shadow">
               {/*<ChartOne base64String={base64String}/>*/}
-              <ChartTwo/>
+              <h5>You can easily access the chart by clicking on it.</h5>
             </div>
 
-            <div className="col-xl-12 px-xl-4 py-xl-4 rounded-4 shadow">
-              <h5 style={{fontSize:"15px"}}>Monthly reach of your Instagram account</h5>
+            <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">
+              <h5 style={{fontSize:"15px"}}>We strive to give you an understanding</h5>
+              <h5 style={{fontSize:"15px"}}>of the reach of your Instagram</h5>
+              <h5 style={{fontSize:"15px"}}>account with a graph.</h5>
             </div>
 
           </div>
 
           <div className="col-xl-4  mt-xl-5">
             <div id='chart_2' onClick={handleNavigateToChartTwo} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-4 mb-xl-4 rounded-4 shadow">
-              <ChartTwo/>
+              <h5>You can easily access the chart by clicking on it.</h5>
             </div>
 
-            <div className="col-xl-12 px-xl-4 py-xl-4 rounded-4 shadow">
-              <h5 style={{fontSize:"15px"}}>Annual reach of your Instagram account</h5>
+            <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">
+              <h5 style={{fontSize:"15px"}}>We believe that it is more useful for you</h5>
+              <h5 style={{fontSize:"15px"}}>to know about the attention</h5>
+              <h5 style={{fontSize:"15px"}}>that your post receives</h5>
             </div>
           </div>
 
-          <div className="col-xl-4  mt-xl-5">
-            <div id="chart_3" onClick={handleNavigateToChartThree} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-4 mb-xl-4 rounded-4 shadow">
-              <ChartThree/>
+          <div className="col-xl-4  mt-xl-5 pt-xl-5">
+            <div id="chart_3" onClick={handleNavigateToChartOne} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-5 mb-xl-4 rounded-4 shadow">
+              <h5>You can easily access the chart by clicking on it.</h5>
             </div>
 
-            <div className="col-xl-12 px-xl-4 py-xl-4 rounded-4 shadow">
-              <h5 style={{fontSize:"15px"}}>Totally reach of your Instagram account</h5>
+            <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">
+              <h5 style={{fontSize:"15px"}}>Things like likes, profile visits, shares</h5>
+              <h5 style={{fontSize:"15px"}}>and comments on your post will give you an</h5>
+              <h5 style={{fontSize:"15px"}}>idea about the response you have.</h5>
             </div>
           </div>
 
