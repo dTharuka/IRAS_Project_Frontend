@@ -1,0 +1,18 @@
+h5{
+    font-size: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+input[type="text"]::-webkit-input-placeholder{
+    font-size: 13px;
+}
+
+input[type="email"]::-webkit-input-placeholder{
+    font-size: 13px;
+}
+#signInButton{
+    background-color: #5D87FF;
+}
