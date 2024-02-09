@@ -69,11 +69,11 @@ const SignUp = () => {
 
     const handleNavigateSignIn = () => {
 
-        localStorage.setItem('IRASUserName',userName)
-        localStorage.setItem('IRASEmail', email);
-        clearText();
-        alert("successful signup");
-        navigate('/sign-in');
+        // localStorage.setItem('IRASUserName',userName)
+        // localStorage.setItem('IRASEmail', email);
+        // clearText();
+        // alert("successful signup");
+        // navigate('/sign-in');
 
         const countryValue = typeof country === 'object' ? country.label : country;
         const genderValue = typeof gender === 'object' ? gender.label : gender;
@@ -96,12 +96,12 @@ const SignUp = () => {
                 // alert("Request successful.........");
                 console.log(response.data);
                 // alert(response.data.message);
-                // localStorage.setItem('IRASUserName',userName)
-                // localStorage.setItem('IRASEmail', email);
+                localStorage.setItem('IRASUserName',userName)
+                localStorage.setItem('IRASEmail', email);
 
-                // clearText();
-                // alert("successful signup");
-                // navigate('/sign-in');
+                clearText();
+                alert("successful signup");
+                navigate('/sign-in');
             })
             .catch((error) => {
                 console.log(error);
