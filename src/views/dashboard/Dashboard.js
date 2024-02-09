@@ -68,7 +68,7 @@ const Dashboard = () => {
 
             <div id="chart_1" onClick={handleNavigateToChartThree} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-5 mb-xl-4 rounded-4 shadow">
               {/*<ChartOne base64String={base64String}/>*/}
-              <h5>You can easily access the chart by clicking on it.</h5>
+              <h5 style={{fontSize:"20px"}}>You can easily access the chart by clicking on it.</h5>
             </div>
 
             <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
           <div className="col-xl-4  mt-xl-5">
             <div id='chart_2' onClick={handleNavigateToChartTwo} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-4 mb-xl-4 rounded-4 shadow">
-              <h5>You can easily access the chart by clicking on it.</h5>
+              <h5 style={{fontSize:"20px"}}>You can easily access the chart by clicking on it.</h5>
             </div>
 
             <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">
@@ -93,7 +93,7 @@ const Dashboard = () => {
 
           <div className="col-xl-4  mt-xl-5 pt-xl-5">
             <div id="chart_3" onClick={handleNavigateToChartOne} className="col-xl-12  py-xl-4 px-xl-4 mt-xl-5 mb-xl-4 rounded-4 shadow">
-              <h5>You can easily access the chart by clicking on it.</h5>
+              <h5 style={{fontSize:"20px"}}>You can easily access the chart by clicking on it.</h5>
             </div>
 
             <div className="col-xl-12 px-xl-4 py-xl-5 rounded-4 shadow">

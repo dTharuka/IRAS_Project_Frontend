@@ -71,6 +71,9 @@ const SignUp = () => {
 
         localStorage.setItem('IRASUserName',userName)
         localStorage.setItem('IRASEmail', email);
+        clearText();
+        alert("successful signup");
+        navigate('/sign-in');
 
         const countryValue = typeof country === 'object' ? country.label : country;
         const genderValue = typeof gender === 'object' ? gender.label : gender;
@@ -96,9 +99,9 @@ const SignUp = () => {
                 // localStorage.setItem('IRASUserName',userName)
                 // localStorage.setItem('IRASEmail', email);
 
-                clearText();
-                alert("successful signup");
-                navigate('/sign-in');
+                // clearText();
+                // alert("successful signup");
+                // navigate('/sign-in');
             })
             .catch((error) => {
                 console.log(error);

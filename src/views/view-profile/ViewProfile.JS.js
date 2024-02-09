@@ -151,7 +151,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="firstName"
-                                        placeholder="First Name"
+                                        // placeholder="First Name"
+                                        placeholder="Dakshina"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -164,7 +165,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="lastName"
-                                        placeholder="Last Name"
+                                        // placeholder="Last Name"
+                                        placeholder="Rajapaksha"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -177,7 +179,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="userName"
-                                        placeholder="User Name"
+                                        // placeholder="User Name"
+                                        placeholder="dtharuka"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -190,7 +193,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="email"
-                                        placeholder="Email"
+                                        // placeholder="Email"
+                                        placeholder="dakshina@gmail.com"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -203,7 +207,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="contactNumber"
-                                        placeholder="Phone"
+                                        // placeholder="Phone"
+                                        placeholder="0713953595"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -219,7 +224,8 @@ const ViewProfile = () => {
                                             { value: 'Female', label: 'Female' },
                                             { value: 'Other', label: 'Other' }
                                         ]}
-                                        placeholder="Gender"
+                                        // placeholder="Gender"
+                                        placeholder="Male"
                                         styles={placeholderStyles}
                                         onChange={handleGenderChange}
                                         isDisabled={!isEditMode}
@@ -233,7 +239,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="state"
-                                        placeholder="State"
+                                        // placeholder="State"
+                                        placeholder="Galle"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -246,7 +253,8 @@ const ViewProfile = () => {
                                         type="text"
                                         className="form-control"
                                         id="city"
-                                        placeholder="City"
+                                        // placeholder="City"
+                                        placeholder="Balapitiya"
                                         disabled={!isEditMode}
                                         onChange={handleInputChange}
                                     />
@@ -259,7 +267,8 @@ const ViewProfile = () => {
                                         id="country"
                                         options={countryOptions}
                                         onChange={handleCountryChange}
-                                        placeholder="Country"
+                                        // placeholder="Country"
+                                        placeholder="Sri Lanka"
                                         styles={placeholderStyles}
                                         isDisabled={!isEditMode}
                                     />
