@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import '../view-profile/ViewProfile.css';
 import {useNavigate} from "react-router";
 import {fetchAllUsers} from "../../service/Service";
+import axios from "axios";
 
 
 const ViewProfile = () => {
@@ -42,6 +43,8 @@ const ViewProfile = () => {
                         setCountry(resp.country);
                         stateChange(resp.state);
                         cityChange(resp.city);
+
+                        localStorage.setItem("mongoKey",resp.id);
                     }
                 }
 
@@ -102,14 +105,51 @@ const ViewProfile = () => {
 
     const handleUpdate = () => {
 
-        const countryValue = typeof country === 'object' ? country.label : country;
-        const genderValue = typeof gender === 'object' ? gender.label : gender;
+        // const countryValue = typeof country === 'object' ? country.label : country;
+        // const genderValue = typeof gender === 'object' ? gender.label : gender;
         // const alertMessage = First Name: ${firstName}\nLast Name: ${lastName}\nUser Name: ${userName}\nEmail: ${email}\nPhone: ${contactNumber}\nGender: ${genderValue}\nCountry: ${countryValue}\nState: ${state}\nCity: ${city};
 
-        localStorage.setItem('IRASUserName', userName)
-        localStorage.setItem('IRASEmail', email);
-        clearText();
-        alert("successful updated");
+
+        const firstNameValue = document.getElementById('firstName')?.value;
+        const lastNameValue = document.getElementById('lastName')?.value;
+        const userNameValue = document.getElementById('userName')?.value;
+        const emailValue = document.getElementById('email')?.value;
+        const contactNumberValue = document.getElementById('contactNumber')?.value;
+        const genderValue = document.getElementById('gender')?.value;
+        const countryValue = document.getElementById('country')?.value;
+        const stateValue = document.getElementById('state')?.value;
+        const cityValue = document.getElementById('city')?.value;
+
+
+
+        const reqastBody = {
+            firstName: firstNameValue,
+            lastName: lastNameValue,
+            userName: userNameValue,
+            email: emailValue,
+            contactNumber: contactNumberValue,
+            gender: genderValue,
+            country: countryValue,
+            state: stateValue,
+            city: cityValue,
+        };
+
+        let id=localStorage.getItem("mongoKey")
+
+        axios.put(`http://127.0.0.1:8000/${id}`, reqastBody)
+            .then((response) => {
+                localStorage.setItem('IRASUserName', reqastBody.userName)
+                localStorage.setItem('IRASEmail', reqastBody.email);
+                alert("successful updated");
+            })
+            .catch((error) => {
+                alert("Error");
+            });
+
+        // localStorage.setItem('IRASUserName', userName)
+        // localStorage.setItem('IRASEmail', email);
+        // clearText();
+        // alert("successful updated");
     };
 
     const handleDelete = () => {
