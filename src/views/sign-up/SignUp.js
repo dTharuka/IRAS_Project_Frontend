@@ -69,11 +69,11 @@ const SignUp = () => {
 
     const handleNavigateSignIn = () => {
 
-        // localStorage.setItem('IRASUserName',userName)
-        // localStorage.setItem('IRASEmail', email);
-        // clearText();
-        // alert("successful signup");
-        // navigate('/sign-in');
+        localStorage.setItem('IRASUserName',userName)
+        localStorage.setItem('IRASEmail', email);
+        clearText();
+        alert("successful signup");
+        navigate('/sign-in');
 
         const countryValue = typeof country === 'object' ? country.label : country;
         const genderValue = typeof gender === 'object' ? gender.label : gender;
@@ -91,7 +91,7 @@ const SignUp = () => {
         };
         // const alertMessage = `First Name: ${firstName}\nLast Name: ${lastName}\nUser Name: ${userName}\nEmail: ${email}\nPhone: ${contactNumber}\nGender: ${genderValue}\nCountry: ${countryValue}\nState: ${state}\nCity: ${city}`;
 
-        axios.post("http://localhost:8000/api/v1/userRegistration/saveUserRegistration", requestBody)
+        axios.post("http://127.0.0.1:8000/create-user", requestBody)
             .then((response) => {
                 // alert("Request successful.........");
                 console.log(response.data);
